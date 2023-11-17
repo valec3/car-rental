@@ -69,7 +69,11 @@ section{
     #HEADER
 \*-----------------------------------*/
 
-
+.bg-header{
+    position: absolute;
+    background: #eeeff1;
+    padding: 1rem 6rem;
+}
 .header{
     position: fixed;
     width: 100%;
