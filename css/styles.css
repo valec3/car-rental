@@ -60,10 +60,19 @@ body{
     scroll-behavior: smooth;
 }
 
-
-
 section{
-    padding: 3rem 4rem;
+    padding: 3rem 1rem;
+}
+@media (min-width: 480px){
+    section{
+        padding: 3rem 4rem;
+    }
+    
+}
+@media (min-width: 768px){
+    section{
+        padding: 3rem 8rem;
+    }
 }
 
 /*-----------------------------------*\
@@ -112,7 +121,7 @@ section{
 }
 .navbar-links a{
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: bold;
     padding: 10px 15px;
     color: var(--text-color);
 }
@@ -176,7 +185,7 @@ section{
     grid-template-columns: repeat(2,1fr);
 }
 .home .text h1{
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 4px;
     margin-bottom: 1rem;
 }
@@ -297,3 +306,101 @@ section{
 /*-----------------------------------*\
     #SERVICES
 \*-----------------------------------*/
+
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.services-content .box{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: .8rem;
+    border-radius: 2rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.services-content .box .box-img{
+    width: 100%;
+    height: 250px;
+}
+.services-content .box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+.services-content .box p{
+    font-weight: bold;
+    padding: 0 1rem;
+    border: 1px solid var(--text-color);
+    width: fit-content;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+.services-content .box h3{
+    font-weight: bold;
+}
+.services-content .box h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0.2rem 0 0.5rem;
+}
+.services-content .box h2 span{
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.services-content .box .btn{
+    display: flex;
+    justify-content: center;
+    background: #474fa0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+.services-content .box .btn:hover{
+    background: var(--primary-color);
+}
+
+
+/*-----------------------------------*\
+    #ABOUT
+\*-----------------------------------*/
+
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+.about-text span{
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.about-text p{
+    margin: .5rem 0 1.4rem;
+}
+.about-text .btn{
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.about-text .btn:hover{
+    background: var(--primary-color);
+}
